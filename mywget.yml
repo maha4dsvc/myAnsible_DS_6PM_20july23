@@ -1,8 +1,9 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks:
-  - name:  i want to install wget
+  - name:  i want to install wget target nodes
     apt:
       name: wget
       state: present
