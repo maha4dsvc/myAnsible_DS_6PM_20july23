@@ -12,3 +12,7 @@
     apt:
       name: apache2
       state: present
+  - name: i want copy index file  into ansible node side
+    template:
+       src:  mydynamicfile.j2
+       dest: /var/www/html/index.html
